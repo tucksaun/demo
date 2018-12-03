@@ -10,7 +10,7 @@ runtime:
         - pdo_pgsql
 
 relationships:
-    database: "database2:postgresql"
+    database: "database1:mysql"
 
 build:
     flavor: none
