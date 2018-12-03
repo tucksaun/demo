@@ -32,6 +32,7 @@ hooks:
         set -x -e
 
         curl -s https://get.symfony.com/cloud/configurator | (>&2 bash)
+        mv /app/scenv /app/.global/bin/scenv
         (>&2 symfony-build)
 
     deploy: |
