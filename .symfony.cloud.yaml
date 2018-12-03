@@ -6,7 +6,11 @@ runtime:
     extensions:
         - apcu
         - mbstring
-        - pdo_sqlite
+        - pdo_mysql
+        - pdo_pgsql
+
+relationships:
+    database: "database2:postgresql"
 
 build:
     flavor: none
